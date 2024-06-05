@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Cookie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  
+    <nav class="border-gray-200 bg-blue-900 dark:bg-gray-800 dark:border-gray-700 w-full fixed top-0 left-0 z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <i class="fas fa-cookie fa-2x text-white"></i> 
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Countdown Cookie</span>
+            </a>
+        </div>
+    </nav>
+
+    <div id="app" class="mt-30 pb-30"> 
+        <div id="event-form" class="mt-4">
+            <h2>Event Details</h2>
+            <form id="add-event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+                
+                <label for="event-date">Event Date:</label>
+                <input type="text" id="event-date" name="event-date" required>
+                
+                <label for="event-time">Event Time:</label>
+                <input type="text" id="event-time" name="event-time" required>
+                
+                <div class="button-group">
+                    <button type="submit">Add Event</button>
+                    <button type="button" id="reset-form">Reset</button>
+                </div>
+            </form>
+        </div>
+        
+        <div id="countdowns" class="mt-4">
+            <input type="text" id="search-input" placeholder="Search Event">
+        </div>
+    </div>
+
+    <div class="weather-widget">
+        <div class="weather-info"></div>
+    </div>
+    
+
+    <footer class="bg-black rounded-lg shadow text-white m-4 w-full">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <i class="fas fa-cookie fa-2x text-white"></i>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Countdown Cookie</span>
+                </a>
+                <ul class="flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center">© 2024 <a href="#" class="hover:underline">Countdown Cookie™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>

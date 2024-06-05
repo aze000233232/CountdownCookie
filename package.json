@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "http-proxy-middleware": "^3.0.0",
+    "nodemailer": "^6.9.13",
+    "ws": "^8.17.0"
+  }
+}

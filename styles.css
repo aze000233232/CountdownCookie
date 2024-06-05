@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding-top: 80px; 
+}
+
+#app {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    max-width: 800px; 
+    width: 100%; 
+    margin: auto;
+}
+
+#event-form h2 {
+    font-weight: bold;
+}
+
+#event-form {
+    width: 400px; 
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#event-form h2 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#event-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#event-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#event-form input[type="text"],
+#event-form input[type="date"],
+#event-form input[type="time"] {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #aa9999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#event-form input[type="text"]:focus,
+#event-form input[type="date"]:focus,
+#event-form input[type="time"]:focus {
+    outline: none;
+    border-color: #1b0370;
+    box-shadow: 0 0 5px #1b0370;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-group button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #1b0370;
+}
+
+#countdowns {
+    width: 500px; 
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.countdown {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.countdown h1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.timer {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.timer span {
+    margin: 0 3px;
+}
+
+#countdowns::-webkit-scrollbar {
+    width: 12px;
+}
+
+#countdowns::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#countdowns::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+}
+
+#countdowns::-webkit-scrollbar-thumb:hover {
+    background: #1b0370;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #aa9999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #1b0370;
+    box-shadow: 0 0 5px #1b0370;
+}
+
+.countdown .timer .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.countdown .timer .delete-button .fas {
+    color: red;
+}
+
+.weather-widget {
+    max-width: 800px; 
+    width: 100%; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    overflow-y: auto; 
+    overflow-x: auto; 
+}
+
+.weather-widget::-webkit-scrollbar {
+    width: 12px;
+}
+
+.weather-widget::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.weather-widget::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 10px;
+}
+
+.weather-widget::-webkit-scrollbar-thumb:hover {
+    background: #1b0370;
+}
+
+.weather-widget h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather-widget p {
+    margin-bottom: 5px;
+}
+
+.weather-info {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.country-container {
+    flex: 0 0 auto;
+    margin-right: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
